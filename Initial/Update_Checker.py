@@ -1,7 +1,7 @@
 import sys
 from termcolor import colored, cprint
 
-def clearedCell(void):
+def clearedCell():
   driveText = colored('\nSystem:', 'yellow')
   print(driveText,"please run the next cell.")
 
