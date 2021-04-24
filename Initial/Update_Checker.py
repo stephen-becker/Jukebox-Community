@@ -1,6 +1,10 @@
 import sys
 from termcolor import colored, cprint
 
+def clearedCell(void):
+  driveText = colored('\nSystem:', 'yellow')
+  print(driveText,"please run the next cell.")
+
 def initalStageCommit(typePrint):
   
   if typePrint == 'gpuTxt':
