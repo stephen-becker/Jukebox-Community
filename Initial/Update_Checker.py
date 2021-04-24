@@ -2,7 +2,7 @@ import sys
 from termcolor import colored, cprint
 
 def clearedCell():
-  driveText = colored('\nSystem:', 'yellow')
+  driveText = colored('\nSystem:', 'orange')
   print(driveText,"please run the next cell.")
 
 def initalStageCommit(typePrint):
