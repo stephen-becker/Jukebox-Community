@@ -21,7 +21,7 @@ def versionChecker(vv):
   goodVersion = colored('Build '+convertedNum, 'green')
   
   if currentUse == recentBuild:
-    print("You're running the beta version of this build.", goodVersion)
+    print("You're running the lastest version of this build.", goodVersion)
     print("There might be errors during your session, report them on discord.")
     needsUpdate = True
   else:
