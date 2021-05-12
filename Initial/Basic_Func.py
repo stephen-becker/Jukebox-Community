@@ -2,9 +2,10 @@ import sys
 import os
 from termcolor import colored, cprint
 
-def ValidationAudioInputs(drive.path, audioFile):
+def ValidationAudioInputs(drivePath, audioFile):
   file_name = audioFile
 
+  drive.path = drivePath
   search_path = drive.path
 
   if not (file_name.endswith(".wav") or file_name.endswith(".WAV")):
