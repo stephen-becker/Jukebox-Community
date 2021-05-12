@@ -2,6 +2,10 @@ import sys
 import os
 from termcolor import colored, cprint
 
+def SafeProceed():
+  driveText = colored('\nSystem:', 'yellow')
+  print(driveText,"Please proceed to run the next cell!")
+
 def StepProcess(userInput):
   if userInput == "ColabMembershipStatus":
     driveText = colored('\nSystem:', 'yellow')
@@ -14,10 +18,6 @@ def StepProcess(userInput):
   if userInput == "DirOutput":
     driveText = colored('\nSystem:', 'yellow')
     print(driveText,"File output path folder was found and selected.")
-  
-  if userInput == "Exit":
-    driveText = colored('\nSystem:', 'yellow')
-    print(driveText,"Please proceed to run the next cell!")
 
 def ValidationHold():
   driveText = colored('\nSystem:', 'yellow')
