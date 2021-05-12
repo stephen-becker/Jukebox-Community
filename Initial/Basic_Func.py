@@ -5,6 +5,7 @@ from termcolor import colored, cprint
 def ValidationAudioInputs(drivePath, audioFile):
   file_name = audioFile
 
+  drive = '/content/drive'
   drive.path = drivePath
   search_path = drive.path
 
