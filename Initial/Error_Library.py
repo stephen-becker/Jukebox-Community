@@ -1,4 +1,7 @@
 def lib_error(typeOfError):
+  
+  if typeOfError == "0x0226":
+    errorRtrn = "Invalid input for 'ColabMembershipStatus', please try again with a valid input of either 'Pro' or 'Free'."
 
   if typeOfError == "0x0225a":
     errorRtrn = "The inputed file could not be found, please type the file name again or check if it exists."
