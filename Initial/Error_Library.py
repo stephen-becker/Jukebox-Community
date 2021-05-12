@@ -1,6 +1,6 @@
 def lib_error(typeOfError):
   
-  global errorRtrn = "Error..."
+  global errorRtrn
   
   if typeOfError == "0x0226":
     errorRtrn = "Invalid input for 'ColabMembershipStatus', please try again with a valid input of either 'Pro' or 'Free'."
