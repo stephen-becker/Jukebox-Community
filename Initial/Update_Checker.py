@@ -4,7 +4,7 @@ from termcolor import colored, cprint
 def clearedCell(GPU):
   currentDriver = GPU
   
-  if "K80" not in currentDriver:
+  if not "K80" not in currentDriver:
     driveText = colored('\nWarning:', 'red')
     print(driveText,"It has been detected that you are using a 'K80' type of GPU which can lead to problems. Please try again for another GPU or you may find you have issues during your run. Proceed with caution!")
   else:
