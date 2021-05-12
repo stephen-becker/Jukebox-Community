@@ -1,11 +1,13 @@
 import sys
 from termcolor import colored, cprint
 
-def limitRuns():
-  finishedRun = False
-  return finishedRun
-
-def clearedCell():
+def clearedCell(GPU):
+  currentDriver = GPU
+  
+  if "K80" not in currentDriver:
+  driveText = colored('\nWarning:', 'red')
+  print(driveText,"It has been detected that you are using a 'K80' type of GPU which can lead to problems. Please try again for another GPU or you may find you have issues during your run. Proceed with caution!")
+  else:
   driveText = colored('\nSystem:', 'yellow')
   print(driveText,"Please proceed to run the next cell!")
 
