@@ -1,6 +1,10 @@
 import sys
 from termcolor import colored, cprint
 
+def limitRuns():
+  finishedRun = False
+  return finishedRun
+
 def clearedCell():
   driveText = colored('\nSystem:', 'yellow')
   print(driveText,"Please proceed to run the next cell!")
