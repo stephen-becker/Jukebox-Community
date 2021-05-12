@@ -4,10 +4,9 @@ from termcolor import colored, cprint
 
 def ValidationAudioInputs(drivePath, audioFile):
   file_name = audioFile
-
-  drive = '/content/drive'
-  drive.path = drivePath
-  search_path = drive.path
+  
+  dpath = drivePath
+  search_path = dpath
 
   if not (file_name.endswith(".wav") or file_name.endswith(".WAV")):
     file_name += '.wav'
