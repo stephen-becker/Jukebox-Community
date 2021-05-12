@@ -2,7 +2,7 @@ import sys
 import os
 from termcolor import colored, cprint
 
-def ValidationAudioInputs(audioFile):
+def ValidationAudioInputs(drive.path, audioFile):
   file_name = audioFile
 
   search_path = drive.path
