@@ -18,6 +18,10 @@ def StepProcess(userInput):
   if userInput == "DirOutput":
     driveText = colored('\nSystem:', 'yellow')
     print(driveText,"File output path folder was found and selected.")
+  
+  if userInput == "JukeboxModel":
+    driveText = colored('\nSystem:', 'yellow')
+    print(driveText,"Jukebox model was selected.")
 
 def ValidationHold():
   driveText = colored('\nSystem:', 'yellow')
