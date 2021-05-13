@@ -2,6 +2,9 @@ def lib_error(typeOfError):
   
   global errorRtrn
   
+  if typeOfError == "0x0227":
+    errorRtrn = "Invalid input for 'AudioArtist', either it was incorrectly entered or selected artist does not exist on this model."
+  
   if typeOfError == "0x0226":
     errorRtrn = "Invalid input for 'ColabMembershipStatus', please try again with a valid input of either 'Pro' or 'Free'."
 
