@@ -2,6 +2,9 @@ def lib_error(typeOfError):
   
   global errorRtrn
   
+  if typeOfError == "0x0227b":
+    errorRtrn = "Invalid input for 'AudioGenre', either it was incorrectly entered or selected genre does not exist on this model."
+  
   if typeOfError == "0x0227":
     errorRtrn = "Invalid input for 'AudioArtist', either it was incorrectly entered or selected artist does not exist on this model."
   
