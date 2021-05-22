@@ -24,10 +24,10 @@ def initalStageCommit(typePrint):
     print(updateText)
   
 def versionChecker(vv):
+  currentUse = vv
   convertedNum = '16.02'
-  betaNum = convertedNum+'01'
+  #betaNum = convertedNum+'01'
   recentBuild = float(convertedNum)
-  currentUse = str(vv)
   needsUpdate = False
   goodVersion = colored('Build '+convertedNum, 'green')
   
@@ -35,8 +35,8 @@ def versionChecker(vv):
     print("You're running the lastest version of this build.", goodVersion)
     print("There might be errors during your session, report them on discord.")
     needsUpdate = True
-  elif currentUse == betaNum:
-    print("You're running a beta version of this build. There may/will be errors as this notebook is not optimized.")
+  #elif currentUse == betaNum:
+  #  print("You're running a beta version of this build. There may/will be errors as this notebook is not optimized.")
   else:
     exitTxt = colored('You\'re running an outdated version of this build. This notebook version is', currentUse)
     sys.exit(exitTxt)
