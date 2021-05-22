@@ -27,7 +27,7 @@ def versionChecker(vv):
   convertedNum = '16.02'
   betaNum = convertedNum+'01'
   recentBuild = float(convertedNum)
-  currentUse = vv
+  currentUse = str(vv)
   needsUpdate = False
   goodVersion = colored('Build '+convertedNum, 'green')
   
