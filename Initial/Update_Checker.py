@@ -38,5 +38,5 @@ def versionChecker(vv):
   elif currentUse == betaNum:
     print("You're running a beta version of this build. There may/will be errors as this notebook is not optimized.")
   else:
-    exitTxt = colored('You\'re running an outdated version of this build.', 'red')
+    exitTxt = colored('You\'re running an outdated version of this build. This notebook version is', currentUse, 'red')
     sys.exit(exitTxt)
