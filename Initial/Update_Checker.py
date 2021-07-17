@@ -24,7 +24,7 @@ def initalStageCommit(typePrint):
     print(updateText)
   
 def versionChecker(vv):
-  convertedNum = '16.02'
+  convertedNum = '16.05'
   recentBuild = float(convertedNum)
   currentUse = vv
   needsUpdate = False
